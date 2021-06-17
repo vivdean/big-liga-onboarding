@@ -1,3 +1,24 @@
 .header {
-  display: block;
+  display: flex;
+  min-height: 75px;
+  margin-bottom: 50px;
+
+  @include viewport--md {
+    margin-bottom: 0;
+  }
+}
+
+.header__wrapper {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header__logo {
+  margin-right: auto;
+  z-index: 1000;
+
+  svg {
+    width: 192px;
+    height: 24px;
+  }
 }

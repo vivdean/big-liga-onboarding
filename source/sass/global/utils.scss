@@ -44,3 +44,15 @@
 
   overflow-y: auto;
 }
+
+.hidden-md {
+  @include viewport--md {
+    display: none;
+  }
+}
+
+.visible-md {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
